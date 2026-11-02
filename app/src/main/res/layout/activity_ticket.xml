@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-TICKET CONFIRMED"
+            android:textColor="@color/brand_red"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="@color/card_dark"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvTicketTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event Title"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#333333"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                    <TextView android:text="Showtime:" android:textColor="@color/text_secondary_dark" android:layout_width="120dp" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvTicketShowtime" android:text="2026-11-01 | 10:00 AM" android:textColor="@color/white" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                    <TextView android:text="Seats:" android:textColor="@color/text_secondary_dark" android:layout_width="120dp" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvTicketSeats" android:text="A1, A2" android:textColor="@color/white" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                    <TextView android:text="Total Fare:" android:textColor="@color/text_secondary_dark" android:layout_width="120dp" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvTicketFare" android:text="₹500" android:textColor="@color/white" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+                    <TextView android:text="Payment:" android:textColor="@color/text_secondary_dark" android:layout_width="120dp" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvTicketPayment" android:text="UPI" android:textColor="@color/white" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+                    <TextView android:text="Booking ID:" android:textColor="@color/text_secondary_dark" android:layout_width="120dp" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvTicketId" android:text="#101" android:textColor="@color/white" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- QR Code representation -->
+                <ImageView
+                    android:id="@+id/ivQrCode"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:contentDescription="QR Code"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/tvQrString"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHOWTIME-QR-12345"
+                    android:textColor="@color/text_secondary_dark"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnDownload"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/card_dark"
+            android:text="Download / Save Ticket"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp"
+            app:cornerRadius="8dp"/>
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/card_dark"
+            android:text="Share Ticket"
+            android:textColor="@color/white"
+            android:layout_marginBottom="12dp"
+            app:cornerRadius="8dp"/>
+
+        <Button
+            android:id="@+id/btnBackHome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/brand_red"
+            android:text="Back to Home"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

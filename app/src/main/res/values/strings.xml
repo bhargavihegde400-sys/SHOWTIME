@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mini</string>
+    <string name="admin_management_portal">Admin Management Portal</string>
+    <string name="add_new_event">Add New Event</string>
+    <string name="admin_passkey">Admin Passkey</string>
+    <string name="admin_login">Admin Login</string>
+</resources>

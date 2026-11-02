@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Cream & Terracotta Palette -->
+    <color name="terracotta">#D96B43</color>
+    <color name="terracotta_dark">#A04420</color>
+    <color name="cream_light">#FDFBF7</color>
+    <color name="cream_dark">#1E1A18</color>
+    <color name="card_dark">#2C2522</color>
+    <color name="card_light">#FFFFFF</color>
+    <color name="text_primary_dark">#F7F4EB</color>
+    <color name="text_secondary_dark">#C5BDB5</color>
+    <color name="text_primary_light">#2C2522</color>
+    <color name="text_secondary_light">#6E655F</color>
+    <color name="seat_available">#443A35</color>
+    <color name="seat_selected">#D96B43</color>
+    <color name="seat_booked">#776B63</color>
+
+    <!-- Aliases for backward compatibility with layouts -->
+    <color name="bg_dark">#1E1A18</color>
+    <color name="bg_light">#FDFBF7</color>
+    <color name="brand_red">#D96B43</color>
+    <color name="brand_red_dark">#A04420</color>
+</resources>

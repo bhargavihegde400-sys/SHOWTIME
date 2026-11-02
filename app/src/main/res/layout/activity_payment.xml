@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/btnBackPayment"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Payment Method"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/tvPaymentSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Amount: ₹0"
+            android:textColor="@color/terracotta"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+            <RadioButton
+                android:id="@+id/rbUpi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="UPI (Google Pay / PhonePe / Paytm)"
+                android:textColor="@color/white"
+                android:buttonTint="@color/terracotta"
+                android:checked="true"
+                android:layout_marginBottom="12dp"/>
+
+            <RadioButton
+                android:id="@+id/rbCard"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Credit / Debit Card"
+                android:textColor="@color/white"
+                android:buttonTint="@color/terracotta"
+                android:layout_marginBottom="12dp"/>
+
+            <RadioButton
+                android:id="@+id/rbNetBanking"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Net Banking"
+                android:textColor="@color/white"
+                android:buttonTint="@color/terracotta"
+                android:layout_marginBottom="12dp"/>
+
+            <RadioButton
+                android:id="@+id/rbWallet"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Mobile Wallets"
+                android:textColor="@color/white"
+                android:buttonTint="@color/terracotta"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/terracotta"
+            android:text="Verify &amp; Pay"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

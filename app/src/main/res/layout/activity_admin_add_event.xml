@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add / Edit Event"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/etAdminTitle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Show / Event Title"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary_dark"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="name"/>
+
+        <EditText
+            android:id="@+id/etAdminCategory"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Category (Movies / Live Shows / Events)"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary_dark"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="name"/>
+
+        <EditText
+            android:id="@+id/etAdminVenue"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Venue Name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary_dark"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="name"/>
+
+        <EditText
+            android:id="@+id/etAdminCity"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="City (e.g., Noida)"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary_dark"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="addressLocality"/>
+
+        <EditText
+            android:id="@+id/etAdminGenre"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Genre (e.g., Action)"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary_dark"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="name"/>
+
+        <EditText
+            android:id="@+id/etAdminSeatTier"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Seat Tier (e.g., VIP)"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary_dark"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="name"/>
+
+        <EditText
+            android:id="@+id/etAdminPrice"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Ticket Price (₹)"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary_dark"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints="name"/>
+
+        <EditText
+            android:id="@+id/etAdminDescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Description"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_secondary_dark"
+            android:inputType="textMultiLine"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:autofillHints="name"/>
+
+        <Button
+            android:id="@+id/btnSaveEvent"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/brand_red"
+            android:text="Save Event"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

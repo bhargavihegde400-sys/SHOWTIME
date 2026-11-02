@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream_dark"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingTop="28dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_management_portal"
+        android:textColor="@color/terracotta"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvStatsSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dashboard Stats"
+        android:textColor="@color/text_secondary_dark"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnAddEvent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/terracotta"
+            android:text="Edit Existing Showtime"
+            android:textColor="@color/white"
+            android:layout_marginEnd="8dp"
+            app:cornerRadius="8dp"/>
+
+        <Button
+            android:id="@+id/btnAdminReports"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/card_dark"
+            android:text="Reports"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdminLogout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/card_dark"
+        android:text="Logout Admin"
+        android:textColor="@color/terracotta"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="8dp"
+        app:strokeColor="@color/terracotta"
+        app:strokeWidth="1dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Existing Events"
+        android:textColor="@color/text_secondary_dark"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAdminEvents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"/>
+
+</LinearLayout>
